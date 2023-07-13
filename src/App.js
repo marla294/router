@@ -1,5 +1,5 @@
 import Page1 from "./Page1";
-import Router from "./router";
+import Router from "./Router";
 
 function App() {
   return (
