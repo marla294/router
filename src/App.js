@@ -1,11 +1,11 @@
 import Page1 from "./Page1";
-import Router from "./Router";
+import BrowserRouter from "./BrowserRouter";
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Page1 />
-    </Router>
+    </BrowserRouter>
   );
 }
 
