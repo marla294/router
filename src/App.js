@@ -1,7 +1,12 @@
 import Page1 from "./Page1";
+import Router from "./router";
 
 function App() {
-  return <Page1 />;
+  return (
+    <Router>
+      <Page1 />
+    </Router>
+  );
 }
 
 export default App;
