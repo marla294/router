@@ -1,12 +1,7 @@
 import Page1 from "./Page1";
-import BrowserRouter from "./BrowserRouter";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Page1 />
-    </BrowserRouter>
-  );
+  return <Page1 />;
 }
 
 export default App;
