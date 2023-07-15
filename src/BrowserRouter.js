@@ -1,7 +1,13 @@
-const BrowserRouter = ({ children }) => {
+import { createContext } from "react";
+
+export const BrowserRouterContext = createContext({});
+
+export const BrowserRouter = ({ browserContext, children }) => {
   let { pathname } = window.location;
   console.log({ pathname });
-  return <>{children}</>;
+  return (
+    <BrowserRouterContext.Provider value={browserContext}>
+      {children}
+    </BrowserRouterContext.Provider>
+  );
 };
-
-export default BrowserRouter;
